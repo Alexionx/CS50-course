@@ -64,3 +64,23 @@ people.sort(key=lambda person: person["name"])
 print(people)
 '''
 
+'''
+#Просте ділення в пайтон з бібліотекою sys для виходу з програми 
+import sys
+
+try:
+    x = int(input("x: "))
+    y = int(input("y: "))
+except ValueError:
+    print("Erro: Invalid input")
+    sys.exit(1)
+
+try:
+    result = x / y
+except ZeroDivisionError:
+    print("Error: Cannot divide by 0.")
+    sys.exit(1)
+    
+
+print(f"{x} / {y} = {result}")
+'''
