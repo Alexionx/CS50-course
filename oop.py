@@ -50,4 +50,17 @@ def hello():
     
 hello()
 '''
-    
+
+'''
+#функція lmbda
+people = [
+    {"name": "Harry", "house": "Griffindor"},
+    {"name": "Cho", "house": "Ravenclavr"},
+    {"name": "Draco", "house": "Slytherin"}
+]
+
+people.sort(key=lambda person: person["name"])
+
+print(people)
+'''
+
