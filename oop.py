@@ -9,7 +9,7 @@ p = Point(2, 8)
 print(p.x)
 print(p.y)
 '''
-
+'''
 #Програма для відстеження бронювання квитків на рейс і щоб не було переповнення
 class Flight():
     def __init__(self, capacity):
@@ -33,6 +33,21 @@ for person in people:
         print(f"Added {person} to flight succesfully")
     else:
         print(f"No available seats for {person}")
-        
+'''
 
+'''
+#Декоратори в Python
+def annuance(f):
+    def wrapper():
+        print ("About to run the function...")
+        f()
+        print("Done with the function")
+    return wrapper
+
+@annuance
+def hello():
+    print("Hello World")
+    
+hello()
+'''
     
